@@ -1,6 +1,8 @@
 {
   "name": "monster-dungeon-danger-quest",
+  "description": "Text based dungeon crawler game built into a chatbot",
   "version": "0.1.0",
+  "author": "dAVE Inden",
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
@@ -18,10 +20,15 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dancing-vikings/monster-dungeon-danger-quest"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "license": "MIT"
 }
