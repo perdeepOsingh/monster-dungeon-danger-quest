@@ -48,7 +48,7 @@ class Game extends Component {
                               id: `hello-hero`,
                               message: ({ previousValue }) => {
                                 this.setState({ player: { name: previousValue }});
-                                return `Greetings ${previousValue}. We are so happy you have come to help us. The dungeon awaits you.`
+                                return `Greetings ${previousValue}. We are so happy you have come to help us. The dungeon awaits you, who knows what lurks in the darkness...`
                               },
                               trigger: `enter-dungeon`
                             },
