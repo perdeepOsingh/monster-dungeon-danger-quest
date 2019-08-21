@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import ChatBot from 'react-simple-chatbot';
 import GameInfo from './GameInfo/GameInfo';
 import createMonster from './Monsters/MonsterCreate';
-
+import PlayerInfo from './Player/PlayerInfo';
 
 class Game extends Component {
-    state = {
-        score: 0,
-        player: {
-            name: '',
-            health: 100,
-            attack: 10,
-            defense: 10
-        },
-        isPlayerAlive: true,
-        currentMonster: undefined,
-        currentlyFighting: false
+    constructor(props) {
+        super(props)
+        this.state = {
+            score: 0,
+            player: new PlayerInfo(),
+            isPlayerAlive: true,
+            currentMonster: undefined,
+            currentlyFighting: false
+        }
     }
 
     render() {
